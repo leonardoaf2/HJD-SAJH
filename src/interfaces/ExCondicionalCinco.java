@@ -29,7 +29,6 @@ public class ExCondicionalCinco extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         Voltar = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -37,7 +36,7 @@ public class ExCondicionalCinco extends javax.swing.JFrame {
         jLabel1.setText("Resolução");
 
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel2.setText("Coloque aqui 5");
+        jLabel2.setText("<html>\nimport java.util.Scanner;<br>\n<br>\nclass Main {<br>\n  public static void main(String[] args) {<br>\n<br>\n    Scanner sc = new Scanner(System.in);<br>\n<br>\n    double altura;<br>\n    int sexo;<br>\n<br>\n    System.out.println(\"Insira sua altura (Com ponto)\");<br>\n    altura = sc.nextDouble();<br>\n    System.out.println(\"Insira seu sexo. 1 para Masculino e 2 para Feminino \");<br>\n    sexo = sc.nextInt();<br>\n<br>\n    if (sexo == 1) {<br>\n      System.out.println(\"Seu peso ideal é: \" + (72.7 * altura - 58));<br>\n    } else if (sexo == 2) {<br>\n      System.out.println(\"Seu peso ideal é: \" + (62.1 * altura - 44.7));<br>\n    }<br>\n  }<br>\n}");
         jLabel2.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         jLabel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
@@ -48,10 +47,6 @@ public class ExCondicionalCinco extends javax.swing.JFrame {
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel3.setText("TITULO");
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -59,12 +54,11 @@ public class ExCondicionalCinco extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel2)
                     .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(0, 292, Short.MAX_VALUE)
-                        .addComponent(Voltar, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(0, 333, Short.MAX_VALUE)
+                        .addComponent(Voltar, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -72,13 +66,11 @@ public class ExCondicionalCinco extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1)
-                .addGap(2, 2, 2)
-                .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addComponent(Voltar)
-                .addContainerGap(21, Short.MAX_VALUE))
+                .addContainerGap(15, Short.MAX_VALUE))
         );
 
         pack();
@@ -131,6 +123,5 @@ public class ExCondicionalCinco extends javax.swing.JFrame {
     private javax.swing.JButton Voltar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     // End of variables declaration//GEN-END:variables
 }

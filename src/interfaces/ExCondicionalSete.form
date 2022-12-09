@@ -26,21 +26,14 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jLabel2" alignment="1" max="32767" attributes="0"/>
+                  <Component id="jLabel2" pref="0" max="32767" attributes="0"/>
                   <Component id="jLabel1" alignment="1" max="32767" attributes="0"/>
                   <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace min="0" pref="320" max="32767" attributes="0"/>
+                      <EmptySpace min="0" pref="421" max="32767" attributes="0"/>
                       <Component id="Voltar" min="-2" pref="111" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
-          </Group>
-          <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jLabel3" pref="431" max="32767" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
-              </Group>
           </Group>
       </Group>
     </DimensionLayout>
@@ -49,18 +42,11 @@
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="21" max="32767" attributes="0"/>
-              <Component id="jLabel2" min="-2" pref="218" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jLabel2" max="32767" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="Voltar" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-          </Group>
-          <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
-                  <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="260" max="32767" attributes="0"/>
-              </Group>
           </Group>
       </Group>
     </DimensionLayout>
@@ -77,7 +63,7 @@
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="2"/>
-        <Property name="text" type="java.lang.String" value="Coloque aqui 7"/>
+        <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;import java.util.Scanner;&lt;br&gt;&#xa;&lt;br&gt;&#xa;class Main {&lt;br&gt;&#xa;  public static void main(String[] args) {&lt;br&gt;&#xa;&lt;br&gt;&#xa;    Scanner sc = new Scanner(System.in);&lt;br&gt;&#xa;&lt;br&gt;&#xa;    String nome;&lt;br&gt;&#xa;    int idade;&lt;br&gt;&#xa;    int sexo;&lt;br&gt;&#xa;    double quantidadeHemoglobina;&lt;br&gt;&#xa;&lt;br&gt;&#xa;    System.out.println(&quot;Insira seu nome:&quot;);&lt;br&gt;&#xa;    nome = sc.nextLine();&lt;br&gt;&#xa;    System.out.println(&quot;Insira sua idade:&quot;);&lt;br&gt;&#xa;    idade = sc.nextInt();&lt;br&gt;&#xa;    System.out.println(&quot;Insira seu sexo. 1 para Masculino e 2 para Feminino.&quot;);&lt;br&gt;&#xa;    sexo = sc.nextInt();&lt;br&gt;&#xa;    System.out.println(&quot;Insira  sua quantidade de hemoglobina em g/gl:&quot;);&lt;br&gt;&#xa;    quantidadeHemoglobina = sc.nextDouble();&lt;br&gt;&#xa;&lt;br&gt;&#xa;    if (idade &gt;= 2 &amp;&amp; idade &lt;= 6 &amp;&amp; quantidadeHemoglobina&gt;&gt;= 11.5 &amp;&amp; quantidadeHemoglobina &lt;= 13.5) {&lt;br&gt;&#xa;      System.out.println(&quot;Resultado normal.&quot;);&lt;br&gt;&#xa;    } else if (idade &gt;= 2 &amp;&amp; idade &lt;= 6 &amp;&amp; quantidadeHemoglobina &lt;= 11.4  quantidadeHemoglobina &gt;= 13.6) {&lt;br&gt;&#xa;      System.out.println(&quot;Existe uma altera&#xe7;&#xe3;o no resultado.&quot;);&lt;br&gt;&#xa;    } else if (idade &gt;= 6 &amp;&amp; idade &lt;= 12 &amp;&amp; quantidadeHemoglobina &gt;= 11.5 &amp;&amp; quantidadeHemoglobina &lt;= 15.5) {&lt;br&gt;&#xa;      System.out.println(&quot;Resultado normal.&quot;);&lt;br&gt;&#xa;    } else if (idade &gt;= 2 &amp;&amp; idade &lt;= 12 &amp;&amp; quantidadeHemoglobina &lt;= 11.4  quantidadeHemoglobina &gt;= 15.6) {&lt;br&gt;&#xa;      System.out.println(&quot;Existe uma altera&#xe7;&#xe3;o no resultado.&quot;);&lt;br&gt;&#xa;    } else if (idade &gt;= 18 &amp;&amp; sexo == 1 &amp;&amp; quantidadeHemoglobina &gt;= 14 &amp;&amp; quantidadeHemoglobina &lt;= 18) {&lt;br&gt;&#xa;      System.out.println(&quot;Resultado normal.&quot;);&lt;br&gt;&#xa;    } else if (idade &gt;= 18 &amp;&amp; sexo == 1 &amp;&amp; quantidadeHemoglobina &lt;= 13.9 || quantidadeHemoglobina &gt;= 18.1) {&lt;br&gt;&#xa;      System.out.println(&quot;Existe uma altera&#xe7;&#xe3;o no resultado.&quot;);&lt;br&gt;&#xa;    } else if (idade &gt;= 18 &amp;&amp; sexo == 2 &amp;&amp; quantidadeHemoglobina &gt;= 12 &amp;&amp; quantidadeHemoglobina &lt;= 16) {&lt;br&gt;&#xa;      System.out.println(&quot;Resultado normal.&quot;);&lt;br&gt;&#xa;    } else if (idade &gt;= 18 &amp;&amp; sexo == 2 &amp;&amp; quantidadeHemoglobina &gt;= 16.1) {&lt;br&gt;&#xa;      System.out.println(&quot;Existe uma altera&#xe7;&#xe3;o no resultado.&quot;);&lt;br&gt;&#xa;    } else if (idade &gt;= 18 &amp;&amp; sexo == 2 &amp;&amp; quantidadeHemoglobina &lt;= 11.1) {&lt;br&gt;&#xa;      System.out.println(&quot;Voc&#xea; est&#xe1; gr&#xe1;vida.&quot;);&lt;br&gt;&#xa;    }&lt;br&gt;&#xa;  }&lt;br&gt;&#xa;}"/>
         <Property name="verticalAlignment" type="int" value="1"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -93,17 +79,6 @@
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="VoltarActionPerformed"/>
       </Events>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel3">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Segoe UI" size="12" style="1"/>
-        </Property>
-        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="33" green="33" red="33" type="rgb"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="TITULO"/>
-      </Properties>
     </Component>
   </SubComponents>
 </Form>

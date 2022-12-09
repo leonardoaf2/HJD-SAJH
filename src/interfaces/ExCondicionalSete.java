@@ -29,7 +29,6 @@ public class ExCondicionalSete extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         Voltar = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -37,7 +36,7 @@ public class ExCondicionalSete extends javax.swing.JFrame {
         jLabel1.setText("Resolução");
 
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel2.setText("Coloque aqui 7");
+        jLabel2.setText("<html>\nimport java.util.Scanner;<br>\n<br>\nclass Main {<br>\n  public static void main(String[] args) {<br>\n<br>\n    Scanner sc = new Scanner(System.in);<br>\n<br>\n    String nome;<br>\n    int idade;<br>\n    int sexo;<br>\n    double quantidadeHemoglobina;<br>\n<br>\n    System.out.println(\"Insira seu nome:\");<br>\n    nome = sc.nextLine();<br>\n    System.out.println(\"Insira sua idade:\");<br>\n    idade = sc.nextInt();<br>\n    System.out.println(\"Insira seu sexo. 1 para Masculino e 2 para Feminino.\");<br>\n    sexo = sc.nextInt();<br>\n    System.out.println(\"Insira  sua quantidade de hemoglobina em g/gl:\");<br>\n    quantidadeHemoglobina = sc.nextDouble();<br>\n<br>\n    if (idade >= 2 && idade <= 6 && quantidadeHemoglobina>>= 11.5 && quantidadeHemoglobina <= 13.5) {<br>\n      System.out.println(\"Resultado normal.\");<br>\n    } else if (idade >= 2 && idade <= 6 && quantidadeHemoglobina <= 11.4  quantidadeHemoglobina >= 13.6) {<br>\n      System.out.println(\"Existe uma alteração no resultado.\");<br>\n    } else if (idade >= 6 && idade <= 12 && quantidadeHemoglobina >= 11.5 && quantidadeHemoglobina <= 15.5) {<br>\n      System.out.println(\"Resultado normal.\");<br>\n    } else if (idade >= 2 && idade <= 12 && quantidadeHemoglobina <= 11.4  quantidadeHemoglobina >= 15.6) {<br>\n      System.out.println(\"Existe uma alteração no resultado.\");<br>\n    } else if (idade >= 18 && sexo == 1 && quantidadeHemoglobina >= 14 && quantidadeHemoglobina <= 18) {<br>\n      System.out.println(\"Resultado normal.\");<br>\n    } else if (idade >= 18 && sexo == 1 && quantidadeHemoglobina <= 13.9 || quantidadeHemoglobina >= 18.1) {<br>\n      System.out.println(\"Existe uma alteração no resultado.\");<br>\n    } else if (idade >= 18 && sexo == 2 && quantidadeHemoglobina >= 12 && quantidadeHemoglobina <= 16) {<br>\n      System.out.println(\"Resultado normal.\");<br>\n    } else if (idade >= 18 && sexo == 2 && quantidadeHemoglobina >= 16.1) {<br>\n      System.out.println(\"Existe uma alteração no resultado.\");<br>\n    } else if (idade >= 18 && sexo == 2 && quantidadeHemoglobina <= 11.1) {<br>\n      System.out.println(\"Você está grávida.\");<br>\n    }<br>\n  }<br>\n}");
         jLabel2.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         jLabel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
@@ -48,10 +47,6 @@ public class ExCondicionalSete extends javax.swing.JFrame {
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel3.setText("TITULO");
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -59,33 +54,23 @@ public class ExCondicionalSete extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                     .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(0, 320, Short.MAX_VALUE)
+                        .addGap(0, 421, Short.MAX_VALUE)
                         .addComponent(Voltar, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addContainerGap()
-                    .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 431, Short.MAX_VALUE)
-                    .addContainerGap()))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 21, Short.MAX_VALUE)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Voltar)
                 .addContainerGap())
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(24, 24, 24)
-                    .addComponent(jLabel3)
-                    .addContainerGap(260, Short.MAX_VALUE)))
         );
 
         pack();
@@ -138,6 +123,5 @@ public class ExCondicionalSete extends javax.swing.JFrame {
     private javax.swing.JButton Voltar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     // End of variables declaration//GEN-END:variables
 }

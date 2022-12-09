@@ -53,7 +53,7 @@ public class ListaCondicional extends javax.swing.JFrame {
             }
         });
 
-        comboSelecao.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECIONAR", "Exercício 1", "Exercício 2", "Exercício 3", "Exercício 4", "Exercício 5", "Exercício 6", "Exercício 7" }));
+        comboSelecao.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECIONAR", "Exercício 1", "Exercício 2", "Exercício 3", "Exercício 4", "Exercício 5", "Exercício 6", "Exercício 7", "Exercício 8" }));
         comboSelecao.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 comboSelecaoActionPerformed(evt);
@@ -144,6 +144,11 @@ public class ListaCondicional extends javax.swing.JFrame {
             sete.setVisible(true);
             setVisible(false);
         }
+        else if(selecao.equalsIgnoreCase("Exercício 8")){
+            ExCondicionalOito oito = new ExCondicionalOito();
+            oito.setVisible(true);
+            setVisible(false);
+        }
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
@@ -184,7 +189,6 @@ public class ListaCondicional extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Voltar;
     private javax.swing.JComboBox<String> comboSelecao;
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;

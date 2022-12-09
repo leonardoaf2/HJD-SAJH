@@ -36,9 +36,9 @@ public class ExCondicionalTres extends javax.swing.JFrame {
         jLabel1.setText("Resolução");
 
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel2.setText("Coloque aqui 3");
+        jLabel2.setText("<html>class Main {<br>\n  public static void main(String[] args) {<br>\n<br>\n    int a = 5;<br>\n    int b = 4;<br>\n    int c = 3;<br>\n    int d = 6;<br>\n<br>\n    if (a>c && c<=d){<br>\n      System.out.println(\"Verdadeira\");<br>\n    } else {<br>\n      System.out.println(\"Falsa\");<br>\n    }<br>\n<br>\n    if (a + b > 10 || a + b == c + d){<br>\n      System.out.println(\"Verdadeira\");<br>\n    } else {<br>\n      System.out.println(\"Falsa\");<br>\n    }<br>\n<br>\n    if (a >=c && d>= c){<br>\n      System.out.println(\"Verdadeira\");<br>\n    } else {<br>\n      System.out.println(\"Falsa\");<br>\n    }<br>\n  }<br>\n}");
         jLabel2.setVerticalAlignment(javax.swing.SwingConstants.TOP);
-        jLabel2.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jLabel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         Voltar.setText("Voltar");
         Voltar.addActionListener(new java.awt.event.ActionListener() {
@@ -51,13 +51,13 @@ public class ExCondicionalTres extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(0, 277, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(0, 497, Short.MAX_VALUE)
                         .addComponent(Voltar, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
@@ -67,10 +67,10 @@ public class ExCondicionalTres extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(Voltar)
-                .addContainerGap(9, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();

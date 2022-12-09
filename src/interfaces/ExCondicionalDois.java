@@ -31,7 +31,6 @@ public class ExCondicionalDois extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         Voltar = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -39,7 +38,7 @@ public class ExCondicionalDois extends javax.swing.JFrame {
         jLabel1.setText("Resolução");
 
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel2.setText("Coloque aqui 2");
+        jLabel2.setText("<html>class Main {<br>\n  public static void main(String[] args) {<br>\n<br>\n    int a = 3;<br>\n    int b = 7;<br>\n    int c = 3;<br>\n    int d = 6;<br>\n<br>\n    if (a + c > b) {<br>\n      System.out.println(\"Exercício A = V\");<br>\n    } else {<br>\n      System.out.println(\"Exercício A = F\");<br>\n    }<br>\n\n    if (b >= (a + 2)) {<br>\n      System.out.println(\"Exercício B = V\");<br>\n    } else {<br>\n      System.out.println(\"Exercício B = F\");<br>\n    }<br>\n\n    if (c == b - a) {<br>\n      System.out.println(\"Exercício C = V\");<br>\n    } else {<br>\n      System.out.println(\"Exercício C = F\");<br>\n    }<br>\n<br>\n    if (b + a <= c) {<br>\n      System.out.println(\"Exercício D = V\");<br>\n    } else {<br>\n      System.out.println(\"Exercício D = F\");<br>\n    }<br>\n<br>\n    if (c + a > b) {<br>\n      System.out.println(\"Exercício E = V\");<br>\n    } else {<br>\n      System.out.println(\"Exercício E = F\");<br>\n    }<br>\n  }<br>\n}");
         jLabel2.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         jLabel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
@@ -50,10 +49,6 @@ public class ExCondicionalDois extends javax.swing.JFrame {
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel3.setText("TITULO");
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -61,10 +56,7 @@ public class ExCondicionalDois extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 486, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 571, Short.MAX_VALUE)
                     .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
@@ -75,13 +67,11 @@ public class ExCondicionalDois extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(Voltar)
-                .addContainerGap(34, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -134,6 +124,5 @@ public class ExCondicionalDois extends javax.swing.JFrame {
     private javax.swing.JButton Voltar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     // End of variables declaration//GEN-END:variables
 }

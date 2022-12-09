@@ -6,7 +6,7 @@
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
-    <SyntheticProperty name="generateCenter" type="boolean" value="true"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
   </SyntheticProperties>
   <AuxValues>
     <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
@@ -23,13 +23,13 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="103" groupAlignment="1" attributes="0">
                   <Component id="jLabel2" max="32767" attributes="0"/>
                   <Component id="jLabel1" alignment="1" max="32767" attributes="0"/>
                   <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace min="0" pref="343" max="32767" attributes="0"/>
+                      <EmptySpace min="0" pref="489" max="32767" attributes="0"/>
                       <Component id="Voltar" min="-2" pref="111" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -39,14 +39,14 @@
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jLabel2" min="-2" pref="365" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="Voltar" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="15" max="32767" attributes="0"/>
+              <EmptySpace pref="19" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -63,7 +63,7 @@
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="2"/>
-        <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;import java.util.Scanner;&lt;br&gt;&#xa;&lt;br&gt;&#xa;class Main {&lt;br&gt;&#xa;  public static void main(String[] args) {&lt;br&gt;&#xa;&lt;br&gt;&#xa;    Scanner sc = new Scanner(System.in);&lt;br&gt;&#xa;&lt;br&gt;&#xa;    double peso;&lt;br&gt;&#xa;    double excesso;&lt;br&gt;&#xa;    double valorUltrapassado;&lt;br&gt;&#xa;&lt;br&gt;&#xa;    System.out.println(&quot;Peso dos peixes: &quot;);&lt;br&gt;&#xa;    peso = sc.nextDouble();&lt;br&gt;&#xa;    if (peso &lt;= 50) {&lt;br&gt;&#xa;      System.out.println(&quot;Peso registrado. Sem multa&quot;);&lt;br&gt;&#xa;    } else if (peso &gt; 50) {&lt;br&gt;&#xa;      excesso = (peso - 50);&lt;br&gt;&#xa;      valorUltrapassado = (excesso * 4);&lt;br&gt;&#xa;      System.out.println(&quot;O valor da multa &#xe9; de &quot; + valorUltrapassado +&quot;$&quot;);&lt;br&gt;&#xa;    }&lt;br&gt;&#xa;  }&lt;br&gt;&#xa;}"/>
+        <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;import java.util.Scanner;&lt;br&gt;&#xa;&lt;br&gt;&#xa;class Main {&lt;br&gt;&#xa;  public static void main(String[] args) {&lt;br&gt;&#xa;&lt;br&gt;&#xa;    Scanner sc = new Scanner(System.in);&lt;br&gt;&#xa;&lt;br&gt;&#xa;    String sangue;&lt;br&gt;&#xa;&lt;br&gt;&#xa;    System.out.println(&quot;Informe seu tipo sangu&#xed;neo: &quot;);&lt;br&gt;&#xa;    sangue = sc.nextLine();&lt;br&gt;&#xa;    if (sangue == &quot;A+&quot;) {&lt;br&gt;&#xa;      System.out.println(&quot;Voc&#xea; pode doar sangue para: AB+ e A+, e pode receber doa&#xe7;&#xe3;o de: A+, A-, O+ e O-&quot;);&lt;br&gt;&#xa;    } else if (sangue == &quot;A-&quot;) {&lt;br&gt;&#xa;      System.out.println(&quot;Voc&#xea; pode doar sangue para: A+, A-, AB+ e AB-, e pode receber doa&#xe7;&#xe3;o de: A- e O-&quot;);&lt;br&gt;&#xa;    } else if (sangue == &quot;B+&quot;) {&lt;br&gt;&#xa;      System.out.println(&quot;Voc&#xea; pode doar sangue para: B+ e AB+, e pode receber doa&#xe7;&#xe3;o de: B+, B-, O+ e O-&quot;);&lt;br&gt;&#xa;    } else if (sangue == &quot;B-&quot;) {&lt;br&gt;&#xa;      System.out.println(&quot;Voc&#xea; pode doar sangue para: B+, B-, AB+ e AB-, e pode receber doa&#xe7;&#xe3;o de: B- e O-&quot;);&lt;br&gt;&#xa;    } else if (sangue == &quot;AB+&quot;) {&lt;br&gt;&#xa;      System.out.println(&quot;Voc&#xea; pode doar sangue para: A+, A-, AB+ e AB-, e pode receber doa&#xe7;&#xe3;o de: A- e O-&quot;);&lt;br&gt;&#xa;    } else if (sangue == &quot;AB-&quot;) {&lt;br&gt;&#xa;      System.out.println(&quot;Voc&#xea; pode doar sangue para: AB+, e pode receber doa&#xe7;&#xe3;o de qualquer tipo sangu&#xed;neo&quot;);&lt;br&gt;&#xa;    } else if (sangue == &quot;O+&quot;) {&lt;br&gt;&#xa;      System.out.println(&quot;Voc&#xea; pode doar sangue para: A+, A-, AB+ e AB-, e pode receber doa&#xe7;&#xe3;o de: A- e O-&quot;);&lt;br&gt;&#xa;    } else if (sangue == &quot;O-&quot;) {&lt;br&gt;&#xa;      System.out.println(&quot;Voc&#xea; pode doar sangue para qualquer tipo sangu&#xed;neo, e pode receber doa&#xe7;&#xe3;o de: O-&quot;);&lt;br&gt;&#xa;    }&lt;br&gt;&#xa;  }&lt;br&gt;&#xa;}"/>
         <Property name="verticalAlignment" type="int" value="1"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">

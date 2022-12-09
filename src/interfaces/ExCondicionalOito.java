@@ -8,12 +8,12 @@ package interfaces;
  *
  * @author leeoa
  */
-public class ExCondicionalQuatro extends javax.swing.JFrame {
+public class ExCondicionalOito extends javax.swing.JFrame {
 
     /**
-     * Creates new form ExCondicionalQuatro
+     * Creates new form ExCondicionalOito
      */
-    public ExCondicionalQuatro() {
+    public ExCondicionalOito() {
         initComponents();
     }
 
@@ -36,7 +36,7 @@ public class ExCondicionalQuatro extends javax.swing.JFrame {
         jLabel1.setText("Resolução");
 
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel2.setText("<html>import java.util.Scanner;<br>\n<br>\nclass Main {<br>\n  public static void main(String[] args) {<br>\n<br>\n    Scanner sc = new Scanner(System.in);<br>\n<br>\n    double numero;<br>\n<br>\n    System.out.println(\"Digite um número: \");<br>\n    numero = sc.nextDouble();<br>\n    if (numero % 2 == 0 && numero > 0) {<br>\n      System.out.println(\"Esse número é par e postivo\");<br>\n    }<br>\n    else if (numero % 2 == 0 && numero < 0) {<br>\n      System.out.println(\"Esse número é par e negativo\");<br>\n    }<br>\n    else if (numero % 2 != 0 && numero > 0) {<br>\n      System.out.println(\"Esse número é ímpar e positivo\");<br>\n    }<br>\n    else if (numero % 2 != 0 && numero < 0) {<br>\n      System.out.println(\"Esse número é ímpar e negativo\");<br>\n    }<br>\n    else if (numero == 0) {<br>\n      System.out.println(\"Esse número é par e neutro\");<br>\n    }<br>\n  }<br>\n}");
+        jLabel2.setText("<html>\nimport java.util.Scanner;<br>\n<br>\nclass Main {<br>\n  public static void main(String[] args) {<br>\n<br>\n    Scanner sc = new Scanner(System.in);<br>\n<br>\n    String sangue;<br>\n<br>\n    System.out.println(\"Informe seu tipo sanguíneo: \");<br>\n    sangue = sc.nextLine();<br>\n    if (sangue == \"A+\") {<br>\n      System.out.println(\"Você pode doar sangue para: AB+ e A+, e pode receber doação de: A+, A-, O+ e O-\");<br>\n    } else if (sangue == \"A-\") {<br>\n      System.out.println(\"Você pode doar sangue para: A+, A-, AB+ e AB-, e pode receber doação de: A- e O-\");<br>\n    } else if (sangue == \"B+\") {<br>\n      System.out.println(\"Você pode doar sangue para: B+ e AB+, e pode receber doação de: B+, B-, O+ e O-\");<br>\n    } else if (sangue == \"B-\") {<br>\n      System.out.println(\"Você pode doar sangue para: B+, B-, AB+ e AB-, e pode receber doação de: B- e O-\");<br>\n    } else if (sangue == \"AB+\") {<br>\n      System.out.println(\"Você pode doar sangue para: A+, A-, AB+ e AB-, e pode receber doação de: A- e O-\");<br>\n    } else if (sangue == \"AB-\") {<br>\n      System.out.println(\"Você pode doar sangue para: AB+, e pode receber doação de qualquer tipo sanguíneo\");<br>\n    } else if (sangue == \"O+\") {<br>\n      System.out.println(\"Você pode doar sangue para: A+, A-, AB+ e AB-, e pode receber doação de: A- e O-\");<br>\n    } else if (sangue == \"O-\") {<br>\n      System.out.println(\"Você pode doar sangue para qualquer tipo sanguíneo, e pode receber doação de: O-\");<br>\n    }<br>\n  }<br>\n}");
         jLabel2.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         jLabel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
@@ -51,30 +51,29 @@ public class ExCondicionalQuatro extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel2)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(0, 341, Short.MAX_VALUE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(0, 489, Short.MAX_VALUE)
                         .addComponent(Voltar, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
                 .addComponent(Voltar)
-                .addContainerGap(22, Short.MAX_VALUE))
+                .addContainerGap(19, Short.MAX_VALUE))
         );
 
         pack();
-        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void VoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VoltarActionPerformed
@@ -101,20 +100,20 @@ public class ExCondicionalQuatro extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(ExCondicionalQuatro.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ExCondicionalOito.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(ExCondicionalQuatro.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ExCondicionalOito.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(ExCondicionalQuatro.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ExCondicionalOito.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(ExCondicionalQuatro.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ExCondicionalOito.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new ExCondicionalQuatro().setVisible(true);
+                new ExCondicionalOito().setVisible(true);
             }
         });
     }

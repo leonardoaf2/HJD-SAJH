@@ -36,9 +36,9 @@ public class ExCondicionalSeis extends javax.swing.JFrame {
         jLabel1.setText("Resolução");
 
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel2.setText("Coloque aqui 6");
+        jLabel2.setText("<html>\nimport java.util.Scanner;<br>\n<br>\nclass Main {<br>\n  public static void main(String[] args) {<br>\n<br>\n    Scanner sc = new Scanner(System.in);<br>\n<br>\n    double peso;<br>\n    double excesso;<br>\n    double valorUltrapassado;<br>\n<br>\n    System.out.println(\"Peso dos peixes: \");<br>\n    peso = sc.nextDouble();<br>\n    if (peso <= 50) {<br>\n      System.out.println(\"Peso registrado. Sem multa\");<br>\n    } else if (peso > 50) {<br>\n      excesso = (peso - 50);<br>\n      valorUltrapassado = (excesso * 4);<br>\n      System.out.println(\"O valor da multa é de \" + valorUltrapassado +\"$\");<br>\n    }<br>\n  }<br>\n}");
         jLabel2.setVerticalAlignment(javax.swing.SwingConstants.TOP);
-        jLabel2.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jLabel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         Voltar.setText("Voltar");
         Voltar.addActionListener(new java.awt.event.ActionListener() {
@@ -54,10 +54,10 @@ public class ExCondicionalSeis extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel2)
                     .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(0, 277, Short.MAX_VALUE)
+                        .addGap(0, 343, Short.MAX_VALUE)
                         .addComponent(Voltar, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
@@ -67,10 +67,10 @@ public class ExCondicionalSeis extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 365, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Voltar)
-                .addContainerGap(9, Short.MAX_VALUE))
+                .addContainerGap(15, Short.MAX_VALUE))
         );
 
         pack();
